@@ -64,17 +64,7 @@ export default function InputGrid({ onSubmit, disabled = false, category }: Inpu
     }
   };
 
-  // Quick fill for testing
-  const handleQuickFill = () => {
-    if (!user || !room) return;
-    const playerIds = Object.keys(room.players);
-    const [player1Id, player2Id] = playerIds;
-    if (user.uid === player1Id) {
-      setOptions(['P1-1', 'P1-2', 'P1-3']);
-    } else {
-      setOptions(['P2-1', 'P2-2', 'P2-3']);
-    }
-  };
+
 
   // Helper to capitalize first letter
   const getCategoryTitle = () => {
@@ -120,16 +110,7 @@ export default function InputGrid({ onSubmit, disabled = false, category }: Inpu
         ))}
       </div>
 
-      <div className="flex gap-2 mt-2">
-        <button
-          type="button"
-          onClick={handleQuickFill}
-          className="px-3 py-1 bg-blue-200 text-blue-800 rounded hover:bg-blue-300 text-xs font-semibold"
-          disabled={disabled}
-        >
-          Quick Fill Test Options
-        </button>
-      </div>
+
 
       <button
         onClick={handleSubmit}
