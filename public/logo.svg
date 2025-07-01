@@ -1,6 +1,0 @@
-<!-- pickduel-favicon.svg -->
-<svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="10" y="14" width="30" height="40" rx="4" fill="#3A76E0" transform="rotate(-8 10 14)" />
-  <rect x="24" y="10" width="30" height="40" rx="4" fill="#F86F38" transform="rotate(12 24 10)" />
-  <path d="M24 33l6 6 10-12" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
