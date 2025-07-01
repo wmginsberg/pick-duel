@@ -10,14 +10,14 @@ export default function EliminationStage() {
   const [flashOption, setFlashOption] = useState<string | null>(null);
 
   useEffect(() => {
-    if (room.revealElimination?.option) {
+    if (room && room.revealElimination?.option) {
       setFlashOption(room.revealElimination.option);
       const timeout = setTimeout(() => {
         setFlashOption(null);
       }, 700); // flash for 700ms
       return () => clearTimeout(timeout);
     }
-  }, [room.revealElimination?.option]);
+  }, [room?.revealElimination?.option]);
 
   if (!room || !user) return null;
 

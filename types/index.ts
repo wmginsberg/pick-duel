@@ -41,6 +41,7 @@ export interface GameActions {
   createRoom: (category?: string) => Promise<string>;
   submitOptions: (options: string[]) => Promise<void>;
   eliminateOption: (target: string) => Promise<void>;
+  acknowledgeEliminationReveal: () => Promise<void>;
   vote: (option: string) => Promise<void>;
   resetGame: () => void;
   setLoading: (loading: boolean) => void;
